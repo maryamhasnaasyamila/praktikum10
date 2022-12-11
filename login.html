@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Login Authentication</title>
+    <script src="text/otentikasi.js"></script>
+
+    <style>
+        body{
+            margin: 25px;
+            padding: 15px;
+        }
+
+        fieldset{
+            width: 15%;
+            border:1px solid red;
+        }
+
+        legend p {
+            font-weight: bold;
+            color: red;
+        }
+
+        .note{
+            font-size: 15px;
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Silakan login terlebih dahulu ya!</h3>
+    <form onsubmit="kirim_form()" id="form">
+        <label for="username">Username &nbsp;&nbsp;</label>
+        <input type="text" id="usrname" required>
+        <br> <br>
+        <label for="password">Password  &nbsp;&nbsp;&nbsp;</label>
+        <input type="password" id="pswd" required>
+        <br> <br>
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <br>
+    <fieldset>
+        <legend>
+            <p><b>Saved Password</b></p>
+        </legend>
+        <p>Username : admin</p>
+        <p>Password : integrity</p>
+        <p class="note">note: lower case without space</p>
+    </fieldset>
+</body>
+</html>
